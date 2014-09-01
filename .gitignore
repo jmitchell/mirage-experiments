@@ -1,5 +1,7 @@
-_build/**
-log/**
+**/_build/**
+Makefile
+log
 main.ml
 main.native*
+mir-*
 *.xl
