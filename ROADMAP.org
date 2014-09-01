@@ -1,0 +1,61 @@
+#+TITLE: Mirage Experiments Roadmap
+
+* Proofs of concept
+  - [0/5] broadcast streams
+    - [ ] UNIX yes command
+    - [ ] timestamp
+    - [ ] random numbers
+    - [ ] UUID generator
+    - [ ] resource consumption metrics
+  - [0/5] workflow
+    - [ ] configuring
+    - [ ] building
+    - [ ] deploying
+    - [ ] testing
+    - [ ] destroying
+  - [0/6] stateless request evaluators
+    - [ ] echo service
+    - [ ] request length
+    - [ ] XOR stream
+    - [ ] base64 encoding/decoding
+    - [ ] rot13 with error handling for characters outside [a-z]
+    - [ ] degrees/radians converter
+  - [0/4] static resource getter
+    - [ ] letters-of-the-english-alphabet
+    - [ ] powers-of-two-up-to-128
+    - [ ] static files (e.g. mirage-www or a static blog)
+    - [ ] zip code lookup (see [[http://www.unitedstateszipcodes.org/zip-code-database/][CSV database]])
+  - [0/4] pub-sub
+    - [ ] distributed cron
+    - [ ] heartbeats published to load balancers, indexers, etc.
+    - [ ] alert notifications pubilshed to centralized provider
+    - [ ] response strategies published by centralized alert dispatcher to appropriate parties
+  - [0/5] horizontal scaling
+    - [ ] metrics aggregator (collect metrics from registered services and retain for analytics)
+    - [ ] load balancer
+    - [ ] auto-scaling
+    - [ ] gradual upgrade/rollback engine across fleet
+    - [ ] gossip protocol for fleet health
+  - [0/12] stateful services
+    - [ ] anonymous key-value store
+    - [ ] anonymous comment streams
+    - [ ] anonymous scrum journal
+    - [ ] anonymous blogging engine
+    - [ ] anonymous wiki
+    - [ ] policies for service alert dispatcher
+    - [ ] search service
+      - Given interfaces for accessing content-to-be-indexed from other services, this could be its own service where the stateful components are limited to a cache
+    - [ ] authentication service
+    - [ ] authenticated key-value store
+    - [ ] authenticated comment streams
+    - [ ] delicious.com clone
+    - [ ] trello clone
+  - [0/8] external protocols
+    - [ ] SMS/MMS
+    - [ ] sending email
+    - [ ] VoIP
+    - [ ] SSL/TLS
+    - [ ] Erlang messages
+    - [ ] audio/video streaming with dynamic quality adjustment
+    - [ ] AJAX
+    - [ ] Web Sockets
