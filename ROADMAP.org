@@ -1,10 +1,10 @@
 #+TITLE: Mirage Experiments Roadmap
 
 * Proofs of concept
-  - [1/5] broadcast streams
+  - [3/5] broadcast streams
     - [X] UNIX yes command
-    - [ ] timestamp
-    - [ ] random numbers
+    - [X] timestamp (depends on [[https://github.com/mirage/mirage/pull/290][fix]])
+    - [X] random numbers (depends on [[https://github.com/mirage/mirage/pull/290][fix]])
     - [ ] UUID generator
     - [ ] resource consumption metrics
   - [0/5] workflow
